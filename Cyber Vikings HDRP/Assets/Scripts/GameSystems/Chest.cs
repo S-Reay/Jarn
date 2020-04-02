@@ -29,8 +29,12 @@ public class Chest : Interactable
     {
         Debug.Log("Chest: " + transform.name + " has been opened");
         UI.SetActive(true);
-        //ALLOW PLAYER TO CLICK ITEMS TO ADD TO INVENTORY
-        //ALLOW PLAYER TO CLOSE CHEST
+        Camera.main.transform.LookAt(UI.transform);
+        Camera.main.GetComponent<MouseLook>().enabled = false;
+        player.GetComponent<PlayerMotor>().enabled = false;
+        player.GetComponent<PlayerActions>().enabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private void Update()
@@ -40,6 +44,15 @@ public class Chest : Interactable
             if (Vector3.Distance(player.transform.position, transform.position) > 5f)
             {
                 UI.SetActive(false);
+            }
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                UI.SetActive(false);
+                Camera.main.GetComponent<MouseLook>().enabled = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                player.GetComponent<PlayerMotor>().enabled = true;
+                player.GetComponent<PlayerActions>().enabled = true;
             }
         }
     }

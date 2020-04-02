@@ -84,7 +84,7 @@ public class PlayerActions : MonoBehaviour
 
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, interactionRange))
         {
-            //Debug.Log("Attempting to interact with: " + hit.transform.name);
+            Debug.Log("Attempting to interact with: " + hit.transform.name);
 
             Interactable interactable = hit.transform.GetComponent<Interactable>();
             if (interactable != null)

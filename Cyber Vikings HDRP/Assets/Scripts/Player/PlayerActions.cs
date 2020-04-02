@@ -125,9 +125,11 @@ public class PlayerActions : MonoBehaviour
         {
             Debug.Log("Hit: " + hit.transform.name);
 
+            GameObject enemyHolder = hit.transform.root.gameObject;
             EnemyStats enemyStats = hit.transform.root.GetComponent<EnemyStats>();
             if (enemyStats != null)
             {
+                Debug.Log("Found EnemyStats");
                 GameObject newIndicator = Instantiate(damageIndicator, hit.point, Quaternion.identity);
                 newIndicator.GetComponentInChildren<Text>().text = enemyStats.TakeDamage(stats.damage.GetValue()).ToString();
             }

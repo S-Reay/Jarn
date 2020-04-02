@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 167f675d6e4b8074aaa0c7c47c708d0e, type: 3}
   m_Name: Plasma Battleaxe
   m_EditorClassIdentifier: 
-  name: Plasma Battleaxe
-  icon: {fileID: 21300000, guid: 8cd7f2fc5cc0bf148aec7409fcce59e0, type: 3}
+  name: Crystal Battleaxe
+  icon: {fileID: 21300000, guid: 3479cc586e2185148922a1bc8d1ea4d9, type: 3}
   equipSlot: 4
   armourModifier: 0
   damageModifier: 17
@@ -21,4 +21,4 @@ MonoBehaviour:
   jumpModifier: 0
   isTwoHanded: 0
   rangedAttack: 1
-  modelID: 3
+  modelID: 1

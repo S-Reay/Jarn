@@ -76,7 +76,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Using your mouse hover over the item to display the information on the
+  m_Text: 'Using your mouse hover over the item to display the information on the
     weapon or armour. '
 --- !u!1 &4012168874601688746
 GameObject:

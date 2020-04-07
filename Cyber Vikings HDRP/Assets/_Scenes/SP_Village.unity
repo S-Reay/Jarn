@@ -4949,7 +4949,6 @@ Transform:
   - {fileID: 1185201777}
   - {fileID: 1653601530}
   - {fileID: 1222878166}
-  - {fileID: 2025171193}
   - {fileID: 1415780332}
   - {fileID: 1752206732}
   - {fileID: 1639755335}
@@ -17941,6 +17940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 835f50f1f88c97a4bb9a296a05a7f65d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseOptionsMenuUI: {fileID: 0}
   audioMixer: {fileID: 0}
   resolutionDropdown: {fileID: 0}
 --- !u!114 &562004686
@@ -19259,36 +19259,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 453031047471292414, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604829626}
-    - target: {fileID: 453031047471292414, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 876502767034768229, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604829625}
-    - target: {fileID: 876502767034768229, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetVolume
-      objectReference: {fileID: 0}
-    - target: {fileID: 1080902370850084231, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604829626}
-    - target: {fileID: 1080902370850084231, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OptionsUI
-      objectReference: {fileID: 0}
     - target: {fileID: 1707943922747705653, guid: f2dd8a4b2f429a9489c548319b54c5d9,
         type: 3}
       propertyPath: player
@@ -19298,7 +19268,7 @@ PrefabInstance:
         type: 3}
       propertyPath: mainCamera
       value: 
-      objectReference: {fileID: 303905297}
+      objectReference: {fileID: 0}
     - target: {fileID: 1938404256332826267, guid: f2dd8a4b2f429a9489c548319b54c5d9,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -20139,26 +20109,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3680007663515309520, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604829626}
-    - target: {fileID: 3680007663515309520, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Resume
-      objectReference: {fileID: 0}
-    - target: {fileID: 4454990340610843208, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604829625}
-    - target: {fileID: 4454990340610843208, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetResolution
-      objectReference: {fileID: 0}
     - target: {fileID: 6217024779537111817, guid: f2dd8a4b2f429a9489c548319b54c5d9,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -20629,16 +20579,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 170.4
       objectReference: {fileID: 0}
-    - target: {fileID: 7285636046576300556, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604829626}
-    - target: {fileID: 7285636046576300556, guid: f2dd8a4b2f429a9489c548319b54c5d9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
-      objectReference: {fileID: 0}
     - target: {fileID: 7324253527025809179, guid: f2dd8a4b2f429a9489c548319b54c5d9,
         type: 3}
       propertyPath: m_IsActive
@@ -20663,7 +20603,7 @@ PrefabInstance:
         type: 3}
       propertyPath: mainCamera
       value: 
-      objectReference: {fileID: 303905297}
+      objectReference: {fileID: 0}
     - target: {fileID: 8340101278769609373, guid: f2dd8a4b2f429a9489c548319b54c5d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

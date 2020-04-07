@@ -7,7 +7,7 @@ public class JH_PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
-    public string mainMenuScene;
+    // public string mainMenuScene;
     public string reloadScene;
 
     public GameObject pauseMenuUI;
@@ -33,21 +33,30 @@ public class JH_PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        //Camera.main.GetComponent<MouseLook>().enabled = true; // This was a attempt to have the game stop when in the pause menu which was done a result of issues
         Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         GameIsPaused = false;
     }
 
     void Pause()
     {
         pauseMenuUI.SetActive(true);
+        //Camera.main.GetComponent<MouseLook>().enabled = false;
         Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         GameIsPaused = true;
     }
 
     public void RestartGame()
     {
         Debug.Log("I think I'm getting this");
+        //Camera.main.GetComponent<MouseLook>().enabled = true;
         Time.timeScale = 1f;                    // Might not need these
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         GameIsPaused = false;                   // Definately needed them
         SceneManager.LoadScene(reloadScene); 
     }
@@ -57,6 +66,8 @@ public class JH_PauseMenu : MonoBehaviour
     public void OptionsUI()
     {
         pauseOptionsMenuUI.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         pauseMenuUI.SetActive(false);
     }
 

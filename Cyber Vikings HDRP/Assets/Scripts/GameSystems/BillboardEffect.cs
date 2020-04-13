@@ -14,6 +14,6 @@ public class BillboardEffect : MonoBehaviour
     }
     void Update()
     {
-        transform.rotation = camTransform.rotation * originalRotation;
+        transform.rotation = camTransform.rotation;
     }
 }

@@ -29,11 +29,10 @@ public class Chest : Interactable
     {
         Debug.Log("Chest: " + transform.name + " has been opened");
         UI.SetActive(true);
-        Camera.main.transform.LookAt(UI.transform);
-        Camera.main.GetComponent<MouseLook>().enabled = false;
-        player.GetComponent<PlayerMotor>().enabled = false;
-        player.GetComponent<PlayerActions>().enabled = false;
-        Cursor.lockState = CursorLockMode.None;
+        //Camera.main.GetComponent<MouseLook>().enabled = false;
+        //player.GetComponent<PlayerMotor>().enabled = false;
+        //player.GetComponent<PlayerActions>().enabled = false;
+        Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
 

@@ -2,29 +2,57 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class UI_Tutorial : MonoBehaviour
 {
-    public GameObject tutorialPanel;
-    public GameObject text;
-    public GameObject meleeObject;
+    [SerializeField] private Image tutorialPanel;
+    [SerializeField] private Text text;
 
-    private void start()
+
+    public void Awake ()
     {
-        tutorialPanel.SetActive(false);
-        text.SetActive(false);
+        tutorialPanel.enabled = false;
+        text.enabled=false;
     }
-    public void OnTriggerEnter()
-    {
-        tutorialPanel.SetActive(true);
-        text.SetActive(true);
-        meleeObject.SetActive(true);
+    
+    public void OnTriggerEnter(Collider player)
+    { if (player.gameObject.tag== "Player")
+        {
+            tutorialPanel.enabled =true;
+            text.enabled =true;
+            Debug.Log("player entered trigger");
+                    }
+        
+      
     }
 
-    public void OnTriggerExit()
+    public void OnTriggerExit(Collider player)
     {
-        tutorialPanel.SetActive(false);
-        text.SetActive(false);
-        meleeObject.SetActive(false);
+        if (player.gameObject.tag == "Player")
+        {
+            tutorialPanel.enabled = false;
+            text.enabled =false;
+            Debug.Log("player entered trigger");
+            
+        }
+
     }
+
+
+
+
+
+
+        //public void OnTriggerExit(Collider player)
+        //{
+
+        //    
+        //    Debug.Log("player exited trigger");
+
+        //}
+
 }
+
+
+

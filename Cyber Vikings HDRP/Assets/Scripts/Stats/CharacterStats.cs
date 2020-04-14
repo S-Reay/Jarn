@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 
 public class CharacterStats : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class CharacterStats : MonoBehaviour
     public Stat armour;
     public Stat moveSpeed;
     public Stat jumpHeight;
+    public AudioClip audioClip;
+
 
     public virtual void Awake()
     {
@@ -28,6 +31,8 @@ public class CharacterStats : MonoBehaviour
         damage -= armour.GetValue();
         damage = Mathf.Clamp(damage, 0, int.MaxValue);  //Ensure damage never drops below zero which would cause healing on hit
 
+        GetComponent<AudioSource>().Play();
+
         CurrentHealth -= damage;
         Debug.Log(transform.name + " took " + damage + " damage.");
 
@@ -36,6 +41,8 @@ public class CharacterStats : MonoBehaviour
             Die();
         }
         return damage;  //Returns damage taken to display on a damage indicator
+
+
     }
 
     public virtual void Die()

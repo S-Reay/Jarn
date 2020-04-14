@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class JH_OptionsMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
-
     public GameObject pauseOptionsMenuUI;
 
     public AudioMixer audioMixer;
@@ -42,18 +40,18 @@ public class JH_OptionsMenu : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            pauseOptionsMenuUI.SetActive(false);
+    //void Update()
+    //{
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+           // pauseOptionsMenuUI.SetActive(false);
             //Camera.main.GetComponent<MouseLook>().enabled = true;
-            Time.timeScale = 1f;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            GameIsPaused = false;
-        }
-    }
+            //Time.timeScale = 1f;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
+            //JH_PauseMenu.GameIsPaused = false;
+        //}
+    //}
 
     public void SetResolution(int resolutionIndex)
     {

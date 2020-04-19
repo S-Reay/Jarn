@@ -21,27 +21,27 @@ public class JH_PauseMenu : MonoBehaviour
         {
             if (GameIsPaused)
             {
-                //Debug.LogWarning("Escape was pressed (Entering Resume). Timescale is [" + Time.timeScale + "]");
+                // Debug.LogWarning("Escape was pressed (Entering Resume). Timescale is [" + Time.timeScale + "]");
                 Resume();
                 
             }
             else
             {
-                //Debug.LogWarning("Escape was pressed (Entering Pause). Timescale is [" + Time.timeScale + "]");
+                // Debug.LogWarning("Escape was pressed (Entering Pause). Timescale is [" + Time.timeScale + "]");
                 Pause();
             }
         }
     }
 
-    void OnGUI()    {        GUILayout.Label("Time.timeScale: " + Time.timeScale);    }
+    // void OnGUI()    // {        // GUILayout.Label("Time.timeScale: " + Time.timeScale);    // }
 
 
     public void Resume()
     {
-        //Debug.LogWarning("Entered (Resume). Timescale is [" + Time.timeScale + "]");
+        // Debug.LogWarning("Entered (Resume). Timescale is [" + Time.timeScale + "]");
         pauseMenuUI.SetActive(false);
         pauseOptionsMenuUI.SetActive(false);
-        //Camera.main.GetComponent<MouseLook>().enabled = true; // This was a attempt to have the game stop when in the pause menu which was done a result of issues
+        // Camera.main.GetComponent<MouseLook>().enabled = true; // This was a attempt to have the game stop when in the pause menu which was done a result of issues
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -50,10 +50,10 @@ public class JH_PauseMenu : MonoBehaviour
 
     void Pause()
     {
-        //Debug.LogWarning("Entered (Pause). Timescale is [" + Time.timeScale + "]");
+        // Debug.LogWarning("Entered (Pause). Timescale is [" + Time.timeScale + "]");
         pauseMenuUI.SetActive(true);
         pauseOptionsMenuUI.SetActive(false);
-        //Camera.main.GetComponent<MouseLook>().enabled = false;
+        // Camera.main.GetComponent<MouseLook>().enabled = false;
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -62,7 +62,7 @@ public class JH_PauseMenu : MonoBehaviour
 
     public void RestartGame()
     {
-        //Debug.LogWarning("Entered (RestartGame). Timescale is [" + Time.timeScale + "]");
+        // Debug.LogWarning("Entered (RestartGame). Timescale is [" + Time.timeScale + "]");
         // Debug.Log("I think I'm getting this");
         // Camera.main.GetComponent<MouseLook>().enabled = true;
         Time.timeScale = 1f;                    // Might not need these
@@ -76,7 +76,7 @@ public class JH_PauseMenu : MonoBehaviour
 
     public void OptionsUI()
     {
-        //Debug.LogWarning("Entered (OptionsUI). Timescale is [" + Time.timeScale + "]");
+        // Debug.LogWarning("Entered (OptionsUI). Timescale is [" + Time.timeScale + "]");
         pauseMenuUI.SetActive(false);
         pauseOptionsMenuUI.SetActive(true);
         Time.timeScale = 0f;

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class OceanAudio : MonoBehaviour
 {
-    [SerializeField] AudioSource beachSound;
+    [SerializeField] AudioSource ambiantSound;
 
      private void OnTriggerEnter(Collider player)
     {
         if (player.gameObject.tag=="Player")
         {
             GetComponent<AudioSource>();
-            beachSound.Play();
+            ambiantSound.Play();
         }
     }
 
@@ -20,7 +20,7 @@ public class OceanAudio : MonoBehaviour
         if (player.gameObject.tag == "Player")
         {
             GetComponent<AudioSource>();
-            beachSound.Stop();
+            ambiantSound.Stop();
         }
     }
 }

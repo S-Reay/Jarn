@@ -692,7 +692,7 @@ MonoBehaviour:
     baseValue: 0
   jumpHeight:
     baseValue: 0
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 560a2a0e012e1874d8bdf9d50a4dce1c, type: 3}
   detectRadius: 30
 --- !u!54 &3929385013299239318
 Rigidbody:

@@ -14,4 +14,10 @@ public class PlayerManager : MonoBehaviour
     #endregion
 
     public GameObject player;
+
+    private void Start()
+    {
+        player.transform.position = GameObject.FindGameObjectWithTag("PlayerSpawn").transform.position;
+        player.transform.rotation = GameObject.FindGameObjectWithTag("PlayerSpawn").transform.rotation;
+    }
 }

@@ -5,20 +5,20 @@ using UnityEngine.UI;
 
 public class AC_RuneImage : MonoBehaviour
 {
-    public Image doubleJump;
-    public Image dashImage;
-    public Image glideImage;
-    public GameObject player;
-    public GameObject runeLight;
+    [SerializeField] private Image doubleJump;
+    [SerializeField] private Image dashImage;
+    [SerializeField] private Image glideImage;
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject runeLight;
 
     public void Awake()
-    { if (player.gameObject.tag == "Player")
-        {
+    { 
+        
             doubleJump.enabled = false;
             dashImage.enabled = false;
             glideImage.enabled = false;
             runeLight.SetActive(false);
-        }
+        
        
 
     }

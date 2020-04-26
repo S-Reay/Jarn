@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 347496aab3cbbe645b636bb207e98424
+guid: 0e173c7d56d2a8547ab9afc873c7392f
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: mixamo.com
+    second: Boss Swipe
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: mixamo.com
+      name: Boss Swipe
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0

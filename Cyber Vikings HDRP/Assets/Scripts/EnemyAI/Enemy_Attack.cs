@@ -11,6 +11,6 @@ public class Enemy_Attack : MonoBehaviour
     }
     public void AttackPlayer()
     {
-        playerStats.TakeDamage(5);
+        playerStats.TakeDamage(15);
     }
 }

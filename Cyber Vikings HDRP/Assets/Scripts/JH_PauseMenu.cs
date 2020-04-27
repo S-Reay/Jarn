@@ -93,8 +93,8 @@ public class JH_PauseMenu : MonoBehaviour
     {
         // Debug.Log("This is on the wrong button for testing");
         Time.timeScale = 1f;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         GameIsPaused = false; 
         SceneManager.LoadScene(sceneName);
     }

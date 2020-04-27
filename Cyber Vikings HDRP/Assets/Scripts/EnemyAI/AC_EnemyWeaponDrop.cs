@@ -7,22 +7,36 @@ public class AC_EnemyWeaponDrop : MonoBehaviour
     public GameObject weapon;
     EnemyHealth enemyHealthScript;
     public Transform weaponPosition;
+    public int health = 200;
     public bool dead = false;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         enemyHealthScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyHealth>();
     }
-     
-    
-    // Update is called once per frame
-    void Update()
+
+    public void TakeDamage(int amount)
     {
-        if (enemyHealthScript.dead)
+        health -= amount;
+        if (health <= 0f)
         {
-            dead = true; 
-            Instantiate(weapon, weaponPosition.position, weaponPosition.rotation);
+           dead = true;
+           Instantiate(weapon, weaponPosition.position, weaponPosition.rotation);
+
         }
     }
+
+    //public void dropWepon()
+    //  {
+    //      if (EnemyHealthScipt.Die)
+    //      {
+    //          dead = true;
+    //          Instantiate(weapon, weaponPosition.position, weaponPosition.rotation);
+    //      }
+    //  }
+
+
+
 }

@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class AC_UIEandI : MonoBehaviour
 {
-    [SerializeField] private Image EButtonImage;
-    [SerializeField] private Image IButtonImage;
+    [SerializeField] private Image keyboardKeyButtonImage;
+   
 
     public void Awake()
     {
-        EButtonImage.enabled = false;
-        IButtonImage.enabled = false;
+        keyboardKeyButtonImage.enabled = false;
+        
 
     }
 
@@ -20,8 +20,8 @@ public class AC_UIEandI : MonoBehaviour
     {
         if (player.gameObject.tag == "Player")
         {
-            EButtonImage.enabled = true;
-            IButtonImage.enabled = false;
+            keyboardKeyButtonImage.enabled = true;
+           
 
             Debug.Log("player entered trigger");
         }
@@ -33,8 +33,8 @@ public class AC_UIEandI : MonoBehaviour
     {
         if (player.gameObject.tag == "Player")
         {
-            EButtonImage.enabled = false;
-            IButtonImage.enabled = false;
+            keyboardKeyButtonImage.enabled = false;
+            
             
             Debug.Log("player exited trigger");
 

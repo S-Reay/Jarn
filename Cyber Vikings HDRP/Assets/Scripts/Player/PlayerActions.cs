@@ -130,7 +130,7 @@ public class PlayerActions : MonoBehaviour
             if (enemyStats != null)
             {
                 Debug.Log("Found EnemyStats");
-                GameObject newIndicator = Instantiate(damageIndicator, hit.point, Quaternion.identity);
+                GameObject newIndicator = Instantiate(damageIndicator, hit.transform.Find("DamageIndicatorPoint").transform.position, Quaternion.identity);
                 newIndicator.GetComponentInChildren<Text>().text = enemyStats.TakeDamage(stats.damage.GetValue()).ToString();
             }
         }

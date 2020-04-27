@@ -7,7 +7,7 @@ public class AC_EnemyWeaponDrop : MonoBehaviour
     public GameObject weapon;
     EnemyHealth enemyHealthScript;
     public Transform weaponPosition;
-    public int health = 200;
+    public int health = 50;
     public bool dead = false;
    
 

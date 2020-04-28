@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/SP_Village.unity
     guid: d2fc3c46c08e57246829704754404043
+  - enabled: 1
+    path: Assets/_Scenes/AC_CreditS/AC_CreditScene.unity
+    guid: eb4e8b76ce3e1f64fb7a7021c66d3b56
   m_configObjects: {}

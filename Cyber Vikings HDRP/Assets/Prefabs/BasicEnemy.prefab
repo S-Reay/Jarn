@@ -278,12 +278,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2511384260041573335}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2308923353000493692}
-  m_RootOrder: 5
+  m_Father: {fileID: 7309418340168137022}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &4774305906664204460
 Rigidbody:
@@ -646,6 +646,7 @@ Transform:
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children:
   - {fileID: 2308923353000493692}
+  - {fileID: 524190179804092565}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -727,6 +728,7 @@ MonoBehaviour:
     baseValue: 0
   audioClip: {fileID: 8300000, guid: 560a2a0e012e1874d8bdf9d50a4dce1c, type: 3}
   detectRadius: 30
+  indicatorPosition: {fileID: 2511384260041573335}
 --- !u!54 &3929385013299239318
 Rigidbody:
   m_ObjectHideFlags: 0

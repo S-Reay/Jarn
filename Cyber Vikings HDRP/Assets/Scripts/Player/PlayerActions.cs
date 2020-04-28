@@ -32,6 +32,8 @@ public class PlayerActions : MonoBehaviour
     public float laserFade = 0f;
     public float maxLaserFade = 0.6f;
 
+
+
     private void Start()
     {
         stats = GetComponent<PlayerStats>();
@@ -129,8 +131,8 @@ public class PlayerActions : MonoBehaviour
             EnemyStats enemyStats = hit.transform.root.GetComponent<EnemyStats>();
             if (enemyStats != null)
             {
-                Debug.Log("Found EnemyStats");
-                GameObject newIndicator = Instantiate(damageIndicator, hit.transform.Find("DamageIndicatorPoint").transform.position, Quaternion.identity);
+                Debug.Log("Found EnemyStats on " + hit.transform.root.name);
+                GameObject newIndicator = Instantiate(damageIndicator, enemyStats.indicatorPosition.transform.position, Quaternion.identity);
                 newIndicator.GetComponentInChildren<Text>().text = enemyStats.TakeDamage(stats.damage.GetValue()).ToString();
             }
         }

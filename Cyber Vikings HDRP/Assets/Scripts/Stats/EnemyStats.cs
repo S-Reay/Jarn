@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyStats : CharacterStats
 {
     public float detectRadius;
+    public GameObject indicatorPosition;
     public override void Die()
     {
         base.Die();

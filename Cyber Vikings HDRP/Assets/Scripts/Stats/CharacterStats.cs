@@ -31,8 +31,6 @@ public class CharacterStats : MonoBehaviour
         damage -= armour.GetValue();
         damage = Mathf.Clamp(damage, 0, int.MaxValue);  //Ensure damage never drops below zero which would cause healing on hit
 
-        GetComponent<AudioSource>().Play();
-
         CurrentHealth -= damage;
         Debug.Log(transform.name + " took " + damage + " damage.");
 

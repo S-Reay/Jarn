@@ -28,8 +28,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2951608716414072081}
-  m_LocalRotation: {x: 0.14964664, y: 0.03589918, z: -0.005422305, w: 0.9880728}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0.233}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1600105549316324592}
@@ -59,7 +59,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 12
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -357,7 +357,6 @@ GameObject:
   - component: {fileID: 4090858950320016008}
   - component: {fileID: 4090858950320016009}
   - component: {fileID: 4090858950320016006}
-  - component: {fileID: 1350428758}
   - component: {fileID: 1350428765}
   m_Layer: 0
   m_Name: Player
@@ -441,7 +440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponRange: 500
   interactionRange: 1.8
-  cam: {fileID: 0}
+  cam: {fileID: 7724074406146029700}
   damageIndicator: {fileID: 6325200330165054203, guid: 2b3e873fd14ae644186961c092061ca3,
     type: 3}
   slashObject: {fileID: 210166961469643445, guid: 24845c9d9052edf408b117ee3c7bf3b6,
@@ -454,7 +453,7 @@ MonoBehaviour:
   grenadeUpForce: 4
   currentWeapon: {fileID: 0}
   attackDelay: 0
-  laserLineRenderer: {fileID: 0}
+  laserLineRenderer: {fileID: 4128936207864085949}
   laserWidth: 0.1
   laserMaxLength: 1000
   laserFade: 0
@@ -511,14 +510,6 @@ MonoBehaviour:
   - {fileID: 3377195945624808553}
   - {fileID: 8095287167882957444}
   modelNumber: 99
---- !u!81 &1350428758
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4090858950320016012}
-  m_Enabled: 1
 --- !u!82 &1350428765
 AudioSource:
   m_ObjectHideFlags: 0
@@ -854,7 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: -10}
+  m_FollowOffset: {x: 0, y: 0, z: -9.771008}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1

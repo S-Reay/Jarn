@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 167f675d6e4b8074aaa0c7c47c708d0e, type: 3}
-  m_Name: Plasma Mace
+  m_Name: Axe_Iron
   m_EditorClassIdentifier: 
-  name: Crystal Mace
-  icon: {fileID: 21300000, guid: 15392da0eb9e6f140a051c4123f6b0ae, type: 3}
-  equipSlot: 4
+  name: Iron Battleaxe
+  icon: {fileID: 21300000, guid: f6dbd37269ff8b242881dc451f1137f7, type: 3}
   armourModifier: 0
-  damageModifier: 17
+  damageModifier: 10
   moveSpeedModifier: 0
   jumpModifier: 0
-  isTwoHanded: 0
-  rangedAttack: 2
-  modelID: 5
+  rangedAttack: 1
+  modelID: 9

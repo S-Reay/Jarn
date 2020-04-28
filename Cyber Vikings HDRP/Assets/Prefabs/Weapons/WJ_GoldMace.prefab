@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6773283854015822809}
   - component: {fileID: 2352162652954771951}
   - component: {fileID: 8329414190494432534}
+  - component: {fileID: 7664784922206513116}
+  - component: {fileID: 7029225986964805559}
   m_Layer: 0
   m_Name: WJ_GoldMace
   m_TagString: Untagged
@@ -25,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7756553292185242058}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 126.87555, y: 52.4, z: -120.256744}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 4.594832, y: 4.594832, z: 4.594832}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &2352162652954771951
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -84,3 +86,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &7664784922206513116
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756553292185242058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.054468967
+  m_Height: 0.2807848
+  m_Direction: 2
+  m_Center: {x: -0.0003735628, y: 2.9744155e-16, z: 0.14325556}
+--- !u!114 &7029225986964805559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756553292185242058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520d2c0d8c5500841a5e63b02e5a17f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 1f1d7a6cf1f80bf40b46374d535211d5, type: 2}

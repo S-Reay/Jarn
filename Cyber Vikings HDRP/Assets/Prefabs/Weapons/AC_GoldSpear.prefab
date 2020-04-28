@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4349709678257607496}
   - component: {fileID: 7056437950703929812}
   - component: {fileID: 7135375627638076902}
+  - component: {fileID: -3524466778146818766}
   m_Layer: 0
   m_Name: AC_GoldSpear
   m_TagString: Untagged
@@ -96,6 +97,19 @@ CapsuleCollider:
   m_Direction: 2
   m_Center: {x: 0.000000052154064, y: -0.000000026077029, z: 0.6264148}
 --- !u!114 &7135375627638076902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378074368256735070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520d2c0d8c5500841a5e63b02e5a17f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 96b134f8b0525a54391218778f41dbcb, type: 2}
+--- !u!114 &-3524466778146818766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

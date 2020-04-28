@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 1892837734643596790}
   - component: {fileID: 7430855113611003840}
   - component: {fileID: 3756910493280123705}
+  - component: {fileID: -5553629668960042530}
+  - component: {fileID: 6543529615206288464}
   m_Layer: 0
-  m_Name: Iron Warhammer
+  m_Name: HE_Iron Warhammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3179519608574185445}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 115.99368, y: 52.4, z: -121.99621}
-  m_LocalScale: {x: 8.196258, y: 8.229116, z: 75.14338}
+  m_LocalScale: {x: 5.097691, y: 5.118128, z: 46.735683}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &7430855113611003840
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -79,3 +81,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &-5553629668960042530
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3179519608574185445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.07754156
+  m_Height: 0.044153616
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.0013600417, z: 0.002817937}
+--- !u!114 &6543529615206288464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3179519608574185445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520d2c0d8c5500841a5e63b02e5a17f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: e2b8d90ace251ed42b226e89fb907ab4, type: 2}

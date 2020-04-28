@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 167f675d6e4b8074aaa0c7c47c708d0e, type: 3}
-  m_Name: Plasma Battleaxe
+  m_Name: Sword_Iron
   m_EditorClassIdentifier: 
-  name: Crystal Battleaxe
-  icon: {fileID: 21300000, guid: 3479cc586e2185148922a1bc8d1ea4d9, type: 3}
-  equipSlot: 4
+  name: Iron Sword
+  icon: {fileID: 21300000, guid: fc4549f37284bbc45b821e62d294a881, type: 3}
   armourModifier: 0
-  damageModifier: 17
+  damageModifier: 10
   moveSpeedModifier: 0
   jumpModifier: 0
-  isTwoHanded: 0
   rangedAttack: 1
-  modelID: 1
+  modelID: 3

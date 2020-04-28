@@ -26,7 +26,7 @@ public class PlayerStats : CharacterStats
 
     void Start()
     {
-        EquipmentManager.instance.onEquipmentChangedCallback += OnEquipmentChanged;
+        EquipmentManager.instance.onWeaponChangedCallback += OnEquipmentChanged;
     }
     private void Update()
     {
@@ -46,6 +46,7 @@ public class PlayerStats : CharacterStats
         {
             armour.AddModifier(newItem.armourModifier);
             damage.AddModifier(newItem.damageModifier);
+            Debug.Log("Added " + newItem.damageModifier + " as damage modifier");
             moveSpeed.AddModifier(newItem.moveSpeedModifier);
             jumpHeight.AddModifier(newItem.jumpModifier);
         }

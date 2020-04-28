@@ -167,6 +167,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7082576332841673880}
+  - component: {fileID: 7799898020037783911}
+  - component: {fileID: -7290131980791759845}
   m_Layer: 0
   m_Name: SP_GoldAxe
   m_TagString: Untagged
@@ -183,10 +185,36 @@ Transform:
   m_GameObject: {fileID: 6057627915721053835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 19.451294, y: 101.98, z: -190.72833}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.26984096, y: 0.26984096, z: 0.26984096}
   m_Children:
   - {fileID: 2769892373839199549}
   - {fileID: 696413538639699885}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7799898020037783911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057627915721053835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.925969, y: 3.6768174, z: 0.20254628}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7290131980791759845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057627915721053835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520d2c0d8c5500841a5e63b02e5a17f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: b87bb28c72a97e04cbd00811b6c6370d, type: 2}

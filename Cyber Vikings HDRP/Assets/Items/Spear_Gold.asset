@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 167f675d6e4b8074aaa0c7c47c708d0e, type: 3}
-  m_Name: Iron Battleaxe
+  m_Name: Spear_Gold
   m_EditorClassIdentifier: 
-  name: Iron Battleaxe
-  icon: {fileID: 21300000, guid: f6dbd37269ff8b242881dc451f1137f7, type: 3}
-  equipSlot: 4
+  name: Gold Spear
+  icon: {fileID: 21300000, guid: a077923f59777014288d7ff9cd597f4c, type: 3}
   armourModifier: 0
-  damageModifier: 12
+  damageModifier: 25
   moveSpeedModifier: 0
   jumpModifier: 0
-  isTwoHanded: 0
-  rangedAttack: 1
-  modelID: 0
+  rangedAttack: 0
+  modelID: 13

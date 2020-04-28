@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8043792544691219819}
   - component: {fileID: 6325301333965417388}
   - component: {fileID: 6864986585737773081}
+  - component: {fileID: -8176258107567801271}
+  - component: {fileID: -5301297061671625426}
   m_Layer: 0
   m_Name: AC_IronSpear
   m_TagString: Untagged
@@ -25,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8043792544691219818}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 130.07518, y: 52.4, z: -122.589745}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 9.189672, y: 9.189672, z: 9.189672}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &6325301333965417388
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -79,3 +81,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &-8176258107567801271
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043792544691219818}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.02
+  m_Height: 0.24
+  m_Direction: 2
+  m_Center: {x: -0.0000006268965, y: 0.000022812046, z: 0.11002857}
+--- !u!114 &-5301297061671625426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043792544691219818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520d2c0d8c5500841a5e63b02e5a17f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: c5237a409b5b3f1408044c6d94a2a0e8, type: 2}

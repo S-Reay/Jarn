@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 167f675d6e4b8074aaa0c7c47c708d0e, type: 3}
-  m_Name: Gold Spear
+  m_Name: Spear_Crystal
   m_EditorClassIdentifier: 
-  name: Gold Spear
-  icon: {fileID: 21300000, guid: a077923f59777014288d7ff9cd597f4c, type: 3}
-  equipSlot: 4
+  name: Crystal Spear
+  icon: {fileID: 21300000, guid: 390290a9010f3d24d862cd3235336161, type: 3}
   armourModifier: 0
-  damageModifier: 17
+  damageModifier: 35
   moveSpeedModifier: 0
   jumpModifier: 0
-  isTwoHanded: 0
   rangedAttack: 0
-  modelID: 3
+  modelID: 14

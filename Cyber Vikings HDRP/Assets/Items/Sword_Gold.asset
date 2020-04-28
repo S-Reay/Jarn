@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 167f675d6e4b8074aaa0c7c47c708d0e, type: 3}
-  m_Name: Iron Warhammer
+  m_Name: Sword_Gold
   m_EditorClassIdentifier: 
-  name: Iron Warhammer
-  icon: {fileID: 21300000, guid: a4766ecda65f8fb40b6e70f26b5bbb8d, type: 3}
-  equipSlot: 4
+  name: Gold Sword
+  icon: {fileID: 21300000, guid: 15ad1baa83b8bce42ad95652dc2c00e1, type: 3}
   armourModifier: 0
-  damageModifier: 13
+  damageModifier: 18
   moveSpeedModifier: 0
   jumpModifier: 0
-  isTwoHanded: 0
-  rangedAttack: 2
-  modelID: 2
+  rangedAttack: 1
+  modelID: 4

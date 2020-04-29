@@ -18,5 +18,5 @@ MonoBehaviour:
   damageModifier: 15
   moveSpeedModifier: 0
   jumpModifier: 0
-  rangedAttack: 2
+  rangedAttack: 0
   modelID: 12

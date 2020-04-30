@@ -7,6 +7,6 @@ public class AC_wincondition : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("AC_CreditScene");
+        SceneManager.LoadScene("AC_youwin");
     }
 }
